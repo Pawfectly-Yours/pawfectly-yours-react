@@ -1,0 +1,41 @@
+{
+  "routes": {
+    "home": "Home",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "notFound": "Not Found"
+  },
+  "helloWorld": "Hello World",
+  "notFound": {
+    "pageNotFound": "Page Not Found",
+    "backToHomePage": "Back To Home Page"
+  },
+  "home": {
+    "title": "Home Page",
+    "button": {
+      "login": "Login"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "button": {
+      "login": "Login"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Login Page",
+      "button": {
+        "dashboard": "Dashboard",
+        "register": "Register"
+      }
+    },
+    "register": {
+      "title": "Register Page",
+      "button": {
+        "login": "Login"
+      }
+    }
+  }
+}
