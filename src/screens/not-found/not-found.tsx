@@ -1,10 +1,11 @@
 import { Button } from "@/components";
+import { translate } from "@/i18n";
 
 export const NotFound = () => {
   return (
     <div>
-      Page Not Found
-      <Button>Back to home page</Button>
+      {translate("notFound.pageNotFound")}
+      <Button>{translate("notFound.backToHomePage")}</Button>
     </div>
   );
 };

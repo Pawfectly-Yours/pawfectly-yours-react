@@ -6,5 +6,9 @@
     "dashboard": "Dashboard",
     "notFound": "Not Found"
   },
-  "helloWorld": "Hello World"
+  "helloWorld": "Hello World",
+  "notFound": {
+    "pageNotFound": "Page Not Found",
+    "backToHomePage": "Back To Home Page"
+  }
 }
