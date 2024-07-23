@@ -10,5 +10,11 @@
   "notFound": {
     "pageNotFound": "Page Not Found",
     "backToHomePage": "Back To Home Page"
+  },
+  "home": {
+    "homePage": "Home Page",
+    "button": {
+      "login": "Login"
+    }
   }
 }

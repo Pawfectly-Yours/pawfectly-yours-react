@@ -1,5 +1,6 @@
 import { Button } from "@/components";
 import { PATH } from "@/config";
+import { translate } from "@/i18n";
 import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
@@ -7,7 +8,10 @@ export const Home = () => {
 
   return (
     <div>
-      Home Page <Button onClick={() => navigate(PATH.LOGIN.path)}>Login</Button>
+      {translate("home.homePage")}{" "}
+      <Button onClick={() => navigate(PATH.LOGIN.path)}>
+        {translate("home.button.login")}
+      </Button>
     </div>
   );
 };
