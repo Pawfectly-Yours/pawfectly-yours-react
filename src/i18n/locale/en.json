@@ -22,5 +22,20 @@
     "button": {
       "login": "Login"
     }
+  },
+  "auth": {
+    "login": {
+      "title": "Login Page",
+      "button": {
+        "dashboard": "Dashboard",
+        "register": "Register"
+      }
+    },
+    "register": {
+      "title": "Register Page",
+      "button": {
+        "login": "Login"
+      }
+    }
   }
 }

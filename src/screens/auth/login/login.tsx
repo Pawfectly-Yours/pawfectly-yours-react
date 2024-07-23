@@ -2,6 +2,7 @@ import { Button } from "@/components";
 import { LoginComponent } from "./components";
 import { useNavigate } from "react-router-dom";
 import { PATH } from "@/config";
+import { translate } from "@/i18n";
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -9,9 +10,13 @@ export const Login = () => {
   return (
     <div>
       <LoginComponent />
-      Login Page
-      <Button onClick={() => navigate(PATH.DASHBOARD.path)}>Dashboard</Button>
-      <Button onClick={() => navigate(PATH.REGISTER.path)}>Register</Button>
+      {translate("auth.login.title")}
+      <Button onClick={() => navigate(PATH.DASHBOARD.path)}>
+        {translate("auth.login.button.dashboard")}
+      </Button>
+      <Button onClick={() => navigate(PATH.REGISTER.path)}>
+        {translate("auth.login.button.register")}
+      </Button>
     </div>
   );
 };
