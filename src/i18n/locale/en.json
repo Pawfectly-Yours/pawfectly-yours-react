@@ -12,7 +12,13 @@
     "backToHomePage": "Back To Home Page"
   },
   "home": {
-    "homePage": "Home Page",
+    "title": "Home Page",
+    "button": {
+      "login": "Login"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
     "button": {
       "login": "Login"
     }

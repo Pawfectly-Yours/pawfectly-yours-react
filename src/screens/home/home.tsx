@@ -8,7 +8,7 @@ export const Home = () => {
 
   return (
     <div>
-      {translate("home.homePage")}{" "}
+      {translate("home.title")}{" "}
       <Button onClick={() => navigate(PATH.LOGIN.path)}>
         {translate("home.button.login")}
       </Button>
