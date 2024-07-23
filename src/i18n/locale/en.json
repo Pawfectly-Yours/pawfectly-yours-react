@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "home": "Home",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "notFound": "Not Found"
+  },
+  "helloWorld": "Hello World"
+}

@@ -1,27 +1,24 @@
+import { translate } from "@/i18n";
+
 export const PATH = {
   HOME: {
-    // TODO:: add translate static text
-    name: "Home",
+    name: translate("routes.home"),
     path: "/",
   },
   LOGIN: {
-    // TODO:: add translate static text
-    name: "Login",
+    name: translate("routes.login"),
     path: "/login",
   },
   REGISTER: {
-    // TODO:: add translate static text
-    name: "Register",
+    name: translate("routes.register"),
     path: "/register",
   },
   DASHBOARD: {
-    // TODO:: add translate static text
-    name: "Dashboard",
+    name: translate("routes.dashboard"),
     path: "/dashboard",
   },
   NOTFOUND: {
-    // TODO:: add translate static text
-    name: "Not Found",
+    name: translate("routes.notFound"),
     path: "/not-found",
   },
 };

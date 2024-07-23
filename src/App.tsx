@@ -1,9 +1,10 @@
 import { Button } from "./components";
+import { translate } from "./i18n";
 
 function App() {
   return (
     <>
-      <Button>test</Button>
+      <Button>{translate("helloWorld")}</Button>
     </>
   );
 }
