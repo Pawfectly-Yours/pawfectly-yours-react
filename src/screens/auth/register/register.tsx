@@ -9,7 +9,7 @@ export const Register = () => {
     <div>
       {translate("auth.register.title")}{" "}
       <Button onClick={() => navigate(PATH.LOGIN.path)}>
-        {translate("auth.login.button")}
+        {translate("auth.register.button.login")}
       </Button>
     </div>
   );
