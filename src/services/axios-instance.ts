@@ -22,11 +22,21 @@ axiosInstance.interceptors.request.use((request) => {
   //     }
   //   }
 
+  console.log(request.url);
+  console.log(request.url?.includes("admin"));
+  console.log("dev mode");
+
+  console.log(DEV_MODE);
+
   // Microservice devmode reroute
   if (DEV_MODE === "development") {
     if (request.url?.includes("auth")) {
+      console.log("auth mani");
+
       request.baseURL = "http://localhost:5001/api";
     } else if (request.url?.includes("admin")) {
+      console.log("recach");
+
       request.baseURL = "http://localhost:5002/api/";
     } else if (request.url?.includes("vet-management")) {
       request.baseURL = "http://localhost:5003/api/";
@@ -36,6 +46,9 @@ axiosInstance.interceptors.request.use((request) => {
       request.baseURL = "http://localhost:5004/api/";
     }
   }
+
+  console.log("base url");
+  console.log(request.baseURL);
 
   return request;
 });
