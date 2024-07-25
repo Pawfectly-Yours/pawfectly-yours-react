@@ -1,3 +1,7 @@
+import { DEV_MODE } from "@/config";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+
 interface MainContainerProviderInterface {
   children: React.ReactNode;
 }
@@ -5,6 +9,11 @@ interface MainContainerProviderInterface {
 export const MainContainerProvider = ({
   children,
 }: MainContainerProviderInterface) => {
-  // TODO:: add theme provider here
-  return <div>{children}</div>;
+  const queryClient = new QueryClient();
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryDevtools initialIsOpen={DEV_MODE == "development"} />
+      <div>{children}</div>;
+    </QueryClientProvider>
+  );
 };
