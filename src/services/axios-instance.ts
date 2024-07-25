@@ -22,12 +22,6 @@ axiosInstance.interceptors.request.use((request) => {
   //     }
   //   }
 
-  console.log(request.url);
-  console.log(request.url?.includes("admin"));
-  console.log("dev mode");
-
-  console.log(DEV_MODE);
-
   // Microservice devmode reroute
   if (DEV_MODE === "development") {
     if (request.url?.includes("auth")) {
@@ -46,9 +40,6 @@ axiosInstance.interceptors.request.use((request) => {
       request.baseURL = "http://localhost:5004/api/";
     }
   }
-
-  console.log("base url");
-  console.log(request.baseURL);
 
   return request;
 });
