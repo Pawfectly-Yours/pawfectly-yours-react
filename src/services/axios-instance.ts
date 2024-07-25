@@ -25,12 +25,8 @@ axiosInstance.interceptors.request.use((request) => {
   // Microservice devmode reroute
   if (DEV_MODE === "development") {
     if (request.url?.includes("auth")) {
-      console.log("auth mani");
-
       request.baseURL = "http://localhost:5001/api";
     } else if (request.url?.includes("admin")) {
-      console.log("recach");
-
       request.baseURL = "http://localhost:5002/api/";
     } else if (request.url?.includes("vet-management")) {
       request.baseURL = "http://localhost:5003/api/";
