@@ -27,7 +27,7 @@ export const Dashboard = () => {
       </Button>
       <Button onClick={testFetchAllUser}>{"test fetch all user"}</Button>
 
-      <div className="">{JSON.stringify(userData.data.resultData)}</div>
+      <div className="">{JSON.stringify(userData?.data?.resultData)}</div>
     </div>
   );
 };
